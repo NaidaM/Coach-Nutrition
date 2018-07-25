@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nada.coach_nutrition.Coach">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="Objectif du jour :"
+            android:textAlignment="center"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/objectif"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="14dp"
+            android:text="non établi !"
+            android:textAlignment="center"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/btnChgGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Modifier objectif"
+            android:onClick="chgGoal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Voir suivi"
+            android:onClick="displayPastDays" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repas du jour"
+            android:textSize="24sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/TVtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: 0kcal"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="14dp"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutMeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddMeal"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10sp"
+            android:onClick="addMeal"
+            android:text="+"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

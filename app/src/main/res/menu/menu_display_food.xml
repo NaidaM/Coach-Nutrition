@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.nada.coach_nutrition.AddMeal">
+    <item
+        android:id="@+id/addNew"
+        android:title="+"
+        android:icon="@drawable/plus"
+        app:showAsAction="ifRoom"/>
+</menu>
